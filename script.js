@@ -26,10 +26,14 @@ listContainer.addEventListener('click', function(e){
     }
 }, false);
 
+
+//Sauvegarder les donnees en local
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
+
+//Reutiliser les donnees sauvegardees en local
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
